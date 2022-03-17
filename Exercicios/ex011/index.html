@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imegem dinâmica</h1>
+    <p>Tente abrir esse site vários dispositivos diferentes
+        ou simplesmente aumente e diminua o tamanho do seu navegador.
+    </p>
+    <!-- Imagens Responcivas usando a tag (picture e source) -->
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+    
+    <h1>Reproduzindo Áudios em HTML5.</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>    
+    <audio preload="auto" autoplay controls loop>
+        <source src="midia/Finals-Silent-Partner.mp3" type="audio/mpeg">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/Finals-Silent-Partner.mp3">Clique aqui para baixar o arquivo</a></p>
+    </audio>
+    <!-- Observação evite o arquivos do tipo (WAV) porque ele é muito pesado! -->
+    <!-- Quando eu coloco o (loop) depois de controls o áudio recomeça -->
+    <!-- Quando eu troco o paranmetro de preload="auto" para "metadata" é exibido o tempo de duração-->
+    <!-- Com o paranmentro controls autoplay não fou bem sucedida !-->
+    <!--Formatos de áudios usados MP3, WAV e OGG-->
+     <!-- Eu também posso usar os formatos (OGG e WAV) onde se tiver os trêz tipos de arquivos no mesmo 
+        documento HTML, neste caso averar um hierarquia, onde o MP3 séra o primeiro.
+        Se ainda sim o navegador não execultar nemum dos tipos de aquivo o navegador não suporta nemum deles.-->
+
+
+        
+</body>
+</html>
