@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+</head>
+<style>
+    /*
+        Observação: sempre termine sua (sife combnetion com sans-serif !) 
+    */
+    body{
+        font-family: 'Courier New', Courier, monospace, sans-serif;
+        /*
+        Medidas Absolutas
+        cm, mm, in, px, pt, pc
+
+        Medidas Relativas
+        em, ex, rem, vw, vh, % entre outras.
+
+        ( 16px geralmente é = 1em ) esses dois são os mais recomendados pela W3C.
+        */
+
+        font-size: 1em;      /* Tamanho das letras */
+        font-weight: bolder; /* Peso das letras */
+        font-style: italic;  /* Estilo das letras */
+        text-decoration: underline; /* Descoração das letras */
+        /*
+           Tipos de peso de fontes
+           lighter, noraml, bold, bolder.
+           E támbem pode ser em forma númerica sendo de 100 a 900.
+        
+        */
+        
+    }
+    h1{
+        /* Declaração ( shorthand font ) */
+        font: italic bolder 3em 'Courier New', sans-serif;
+        /* Sempre seguindo a ordem que é, (font-style -> font-weight -> font-size -> font-family) */
+    }
+
+</style>
+
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam accusantium eum sed sapiente eos dolores
+        dignissimos id, ipsam placeat soluta modi, ullam ea quae assumenda optio. Iste sequi delectus facere.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus deserunt magni maxime quaerat minima
+        ipsam reprehenderit dolorum fugit, vel excepturi debitis aspernatur velit libero, odio voluptatum quas quia quos
+        facere.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo beatae et quaerat eius voluptatibus numquam
+        eum mollitia quibusdam, ab consectetur officiis quae quidem ullam, harum optio corrupti? Maxime, eius deleniti!
+    </p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime nisi quod voluptatem? Dolore voluptates magnam
+        necessitatibus, amet quo repellendus mollitia. Molestias minima pariatur libero neque, explicabo maxime
+        blanditiis quae hic.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore doloremque fuga iusto sunt fugit magni. Quis
+        suscipit ea nam? Quos, dolor laboriosam eveniet est ratione quisquam vel natus dicta aliquid.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas illum sed quam nam eveniet ullam laboriosam
+        deleniti inventore facere ex odit autem officiis, molestias fugiat labore commodi excepturi eligendi laborum.
+    </p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum deserunt eum itaque quos corrupti obcaecati velit
+        aspernatur, sit quibusdam ab nulla nobis iusto, quia, sapiente sequi autem pariatur minima magni?
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis commodi animi ipsam, quo aut doloribus id hic
+        esse voluptas, sint fuga numquam atque est, quam ipsa. Fuga voluptatem doloribus officia.
+    </p>
+
+</body>
+
+</html>
