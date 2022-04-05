@@ -29,21 +29,62 @@ body {
     background-color: var(--cor0);
     font-family: var(--fonte-padrao);
 }
+a.externo::after {
+    content: '\00A0\1F517';
+}
+
+main  p {
+    margin: 15px 0px;
+    text-align: justify;
+}
+
 header {
-    background-color: var(--cor4);
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+    min-height: 200px;
+    text-align: center;
+    padding-top: 40px;
 }
 
 header > h1 {
     color: white;
     font-family: var(--fonte-destaque);
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.479);
 }
 header > p {
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
     color: white;
+    max-width: 600px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.479);
+    
 }
+/* Navegação */
+
 nav{
     background-color: var(--cor5);
+    padding: 10px;
+    box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.438);
+}
+nav > a {
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+nav > a:hover {
+    background-color: var(--cor3);
+    color: var(--cor5);
 }
 
+
+/* Área princimpal */
 main {
     max-width: 1000px;
     min-width: 300px;
@@ -63,17 +104,90 @@ main h1 {
 
 main h2 {
     font-family: var(--fonte-android);
+    color: var(--cor4);
+    font-size: 1.3em;
+    background-color: linear-gradient(to right, var(--cor1), transparent);
+    text-indent: 8px;
 }
+
+main  p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 25px;
+    font-size: 1em;
+    line-height: 2em;
+}
+
+main strong {
+    color: var(--cor4);
+    font-weight: bold;
+}
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor5);
+    background-color: var(--cor1);
+    padding: 2px 6px;
+}
+main a:hover {
+    text-decoration: underline;
+    color: var(--cor4);
+}
+
 main img {
     width: 100%;
 }
 main img.pequena {
-    width: 50%;
+    max-width: 350px;
     display: block;
     margin: auto;
 }
 
+/* seção */
+aside {
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+}
+/* cuidado com o código gerado no list-style-type (\2714\00A0\00A0) o mesmo não é compativel com todos navegadores. */
+aside > ul {
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
+}
+
+aside > h3 {
+    background-color: var(--cor4);
+    padding: 5px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+aside a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor5);
+    background-color: var(--cor2);
+    padding: 2px 6px;
+} 
+
+
+/* Roda-pé */
 footer{
     background-color: var(--cor5);
     color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+footer a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--cor1);
 }
