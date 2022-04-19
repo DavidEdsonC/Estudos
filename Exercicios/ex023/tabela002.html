@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+</head>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    table {
+        width: 500px;
+        border-collapse: collapse;
+    }
+
+    td, th {
+        border: 1px solid black;
+        padding: 10px;
+    }
+
+    thead, tfoot {
+        background-color: gray;
+        color: white;
+    }
+    td.num {
+        text-align: right;
+    }
+   
+
+</style>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!-- 
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            THEADER
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH        
+     -->
+    <table>
+        <thead>
+            <tr>
+                <th>Estado</th>
+                <th>População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">2.348.338.000</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">651.873.000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">779.928.000</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num"> 482.464.000</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">466.377.000</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">323.264.000</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">293.241.000</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="num">273.614.000</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">208.672.000</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">197.853.000</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">178.377.000</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">163.575.000</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="num">142.122.000</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td class="num">137.346.000</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">108.181.000</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td class="num">106.943.000</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">97.340.000</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="num">71.337.000</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class="num">67.986.000</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="num">58.964.000</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td class="num">52.781.000</td>
+            </tr>
+            <tr>
+                <td>Rondônia</td>
+                <td class="num">47.091.000</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td class="num">44.689.000</td>
+            </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td class="num">39.356.000</td>
+            </tr>
+            <tr>
+                <td>Amapá</td>
+                <td class="num">17.497.000</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="num">15.630.000</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="num">14.292.000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th><strong>Total de Habitantes</strong></th>
+                <td class="num">7.389.131.000</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>
