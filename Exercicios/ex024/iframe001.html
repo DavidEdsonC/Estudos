@@ -5,13 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudos De HTML5 e CSS3</title>
+
+    <style>
+        iframe {
+            width: 400px;
+            height: 400px;
+        }
+    </style>
+
 </head>
 <body>
+
+    <!-- Por padrão o iframe tem 300x150 -->
+    <!-- Você pode fazer auterações ( inline ou nas CSS3 ), como no exemplo acima.
+        Onde á Hirarquia do estilo é preferencialmente as CSS3 externas e semanticamente corretas. -->
 
     <h1>Primeiros passos com Iframe</h1>
     <p>
         Paragafo de testes
-        <iframe src="https://www.cursoemvideo.com" frameborder="0"></iframe>
+        <iframe src="https://www.cursoemvideo.com" frameborder="0"
+        height="500"></iframe>
         do iframe.
     </p>
 
@@ -21,6 +34,30 @@
     <!-- Um exemplo é o site do Google -->
     <p>O site do <iframe src="https://www.google.com.br" frameborder="0"></iframe>
         é muito legal!
+    </p>
+
+    <!-- Parametro para configurar a barra de rolagem é, -> ( scolling="propriedade" ).
+        
+        Já as propriedades são ( auto, yes e no ):
+        Á opção (auto) é a opção padrão.
+        
+        Á opção (yes) é uma propiedade que mesmo que todo o conteudo caiba no iframe,
+        ainda assim o mesmo terar uma barra de rolagem!
+        
+        Já a opção (no) faz exatamente o inverço do 'YES'!
+        Obs: Á propriedade (NO) em alguns navegadores, se o conteudo for maior que o
+        iframe o mesmo não terar a barra de rolagem.
+    -->
+
+    <!-- O parametro ( frameborder="valores" ), só aceita dois valores que são 0 e 1.
+        Obs: Você pode por qualquer valor mais á auteração séra auternada entre 0 e 1. -->
+
+    <p>
+        O repositorio
+
+        <iframe src="https://gustavoguanabara.github.io" frameborder="0"></iframe>
+
+        tambem é muito legal!
     </p>
 
 </body>
