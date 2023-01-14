@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#tela {
+            width: 100%;
+            height: 400px;
+            border: 1px dashed black;
+            display: block;
+            margin: auto;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati est nesciunt laudantium neque doloremque in
+        ipsam laborum quos doloribus minima molestias magni, cumque itaque, rem maiores voluptatem reprehenderit amet
+        ea.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati est nesciunt laudantium neque doloremque
+        in
+        ipsam laborum quos doloribus minima molestias magni, cumque itaque, rem maiores voluptatem reprehenderit amet
+        ea.</p>
+
+    <ul>
+        <li><a href="paginas-extras/pagina01.html" target="frame">Primeira página</a></li>
+        <li><a href="paginas-extras/pag002.html" target="frame">Segunda página</a></li>
+        <li><a href="paginas-extras/pagina003.html" target="frame">Terceira página</a></li>
+    </ul>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo repellendus omnis quaerat dignissimos possimus
+        vero expedita corporis recusandae laboriosam nesciunt. Quasi quo necessitatibus eligendi quas voluptatibus
+        aliquid hic nam repudiandae.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia similique eaque laborum reiciendis perferendis
+        eius aperiam ipsum aliquid illo dolore ipsam blanditiis alias eos expedita molestias neque labore, doloremque
+        atque?
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe vel ipsum nostrum debitis iure numquam
+        reiciendis, exercitationem molestiae. Libero, eius eligendi labore sapiente rerum enim distinctio officia ipsum
+        odio nam.
+    </p>
+    <!-- Você pode usar o paramentro ( srcdoc="" ), para colocar tags HTML dentro do iframe. -->
+    <iframe id="tela" name="frame"
+        srcdoc="<h1>Como neste Exemplo</h1><p>Até mesmo imagens como esta abaixo!</p>
+        <img src='imagem/imagem-teste.png'>">
+        <p>Infelismente sou navegador não é compativel com esse conteudo!</p>
+    </iframe>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum reprehenderit incidunt nesciunt rem earum
+        unde aliquid laudantium placeat possimus illum, et error vel, asperiores ullam inventore quia voluptates
+        commodi quis!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore quo voluptatum corporis, tempora earum
+        qui quibusdam assumenda error cumque modi? Magnam laudantium cum delectus dolorem. Amet debitis quaerat
+        ipsum ullam.
+    </p>
+
+</body>
+
+</html>
