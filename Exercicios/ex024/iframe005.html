@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scripts dentro do iframe</title>
+</head>
+
+<body>
+
+    <!-- Exemplo pratico de bloqueio de scripts dentro do iframe com o paramentro ( sandbox ) e o valor ( "sandbox" ),
+    no qual o valor boquia quase todo.
+    E para permitir só mente os scripts use o valor ( "allow-scripts" ). -->
+    <h1>Minha página</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit non voluptates explicabo ab rem. Fugit vitae est
+        culpa ad suscipit commodi eveniet, vero, iste quas aut amet molestias voluptate fugiat nihil animi. Quam dolor
+        aut nostrum perspiciatis unde? Sint harum quia culpa sunt alias
+        autem fuga facilis ea est! Cum tempore soluta, omnis eius voluptas exercitationem maxime ut illo commodi
+        oloremque tenetur labore officia!</p>
+    
+        <!-- Exemplos de permições -->
+    <h2>Sem permição para uso de scripts</h2>
+    <iframe src="paginas-extras/pag005.html" sandbox="sandbox"></iframe>
+    <h2>Com permição para uso de scripts</h2>
+    <iframe src="paginas-extras/pag005.html" sandbox="allow-scripts"></iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit non voluptates explicabo ab rem. Fugit vitae est
+        culpa ad suscipit commodi eveniet, vero, iste quas aut amet molestias voluptate fugiat nihil animi. Quam dolor
+        nostrum hic sapiente maxime culpa repellat laudantium quas excepturi repellendus odio voluptates reiciendis id
+        atque dolorum consectetur aliquid, blanditiis veritatis molestias doloremque voluptatum cum. Dolores, quae
+        sapiente. Harum sint nemo natus, quidem suscipit nobis maxime eveniet sed, repellendus id cumque commodi quae
+        deleniti ullam impedit reiciendis ducimus aut voluptatibus nam, voluptatum facere dolor at. Ipsam eveniet
+        praesentium totam quisquam excepturi corporis aut nostrum perspiciatis unde? Sint harum quia culpa sunt alias
+        autem fuga facilis ea est! Cum tempore soluta, omnis eius voluptas exercitationem maxime ut illo commodi
+        quisquam expedita obcaecati veniam velit nobis unde tenetur ducimus praesentium minima nesciunt nemo! Alias ex
+        sapiente distinctio doloribus commodi! Nulla veniam corporis incidunt dicta quibusdam facilis numquam veritatis
+        architecto aspernatur nesciunt laborum atque saepe id consequuntur, consequatur inventore accusantium
+        exercitationem sunt deserunt natus quos provident? Numquam, sit a. Officia corporis odio unde libero
+        consequuntur similique adipisci qui autem mollitia eos quos eaque quae ut excepturi sunt atque iure sequi
+        quisquam voluptatum, hic repudiandae saepe! Exercitationem doloremque tenetur labore officia!</p>
+</body>
+
+</html>
