@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <!-- Observação deste formulário:
+        O mesmo não tem ligação entre seus campos ( p ) e os ( input ).
+        E ainda não tem uma ligação com um banco de dados!
+
+        Um formulário pode ser enviar para uma aplicação ( Java, PHP e ASP), para enviar
+    o formulário, para o PHP basta por como valor ( valor.php ) dentro do parametro desta forma -> ( action="cadastro.php" ).
+        
+    Onde para fazer aligação do formulário e a linguagem de programação PHP, o valor que esta
+    dentro do parametro ( name ), é de estrema importancia ! Diferentimente do JavaScript, que da enfase ao valor do,
+    ( id ).        
+    -->
+    <h1>Meu primeiro Formulário</h1>
+    <form action="cadastro.php" autocomplete="off">
+       
+        <label for="inome">Nome:</label>
+        <input type="text" name="nome" id="inome">
+
+        <label for="isobrenome">Sobrenome:</label>
+        <input type="text" name="sobrenome" id="isobrenome">
+
+
+        <input type="submit" value="Enviar">
+    </form>
+
+    <!-- Para desativar o auto complite basta por um parametro seguido do um valor como no exemplo:
+        ( autocomplete="off" ). -->
+
+</body>
+
+</html>
