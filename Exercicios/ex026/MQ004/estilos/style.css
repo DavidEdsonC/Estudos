@@ -41,10 +41,8 @@ img {
     margin: auto;
 }
 
-img#phone {
-    display: block;
-}
-
-img#tablet, img#impressao, img#desktop, img#tv {
-    display: none;
-}
+img#phone {display: block;}
+img#tablet {display: none;}
+img#impressao {display: none;}
+img#desktop {display: none;}
+img#tv {display: none;}

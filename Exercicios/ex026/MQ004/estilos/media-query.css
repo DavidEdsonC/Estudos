@@ -2,7 +2,78 @@
 
 
 /* Todos as Media */
+/* Typical Device Breakpoints
+------------------------------
+*   Pequenas Telas: até 600px
+*   Celulares: 600px até 768px
+*   Tablet:    768px até 992px
+*   Desktop:   992px até 1200px
+*   Grandes Telas: acima de  1200px.
+*/
 
+/* Telas de Impressão */
 @media print {
+    body {
+        /* background-image: url(../imagens/back-print.jpg); 
+            Obs: A propriedade background-image Não se aplica para impressão !
+        */
+        font-family: 'Courier New', Courier, monospace;
+    }
+    main {
+        width: 90vw;
+        border: 2px solid rgba(0, 0, 0, 0.651);
+    }
+    main::after {
+        content: 'Este, site foi criado por David Edson.';
+        text-align: center;
+        text-decoration: overline;
+    }
+    main h1 {
+        text-shadow: none;
+        color: black;
+    }
+    img#phone {display: none;}
+    img#tablet {display: none;}
+    img#impressao {display: block;}
+    img#desktop {display: none;}
+    img#tv {display: none;}
+}
+
+/* Tablets */
+@media screen and (min-width: 768px) and (max-width: 992px){
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+    img#phone {display: none;}
+    img#tablet {display: block;}
+    img#impressao {display: none;}
+    img#desktop {display: none;}
+    img#tv {display: none;}
+}
+
+/* Desktops */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    img#phone {display: none;}
+    img#tablet {display: none;}
+    img#impressao {display: none;}
+    img#desktop {display: block;}
+    img#tv {display: none;}
+}
+
+/* Telas Grandes TVs*/
+@media screen and (min-width: 1200px) {
+
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    img#phone {display: none;}
+    img#tablet {display: none;}
+    img#impressao {display: none;}
+    img#desktop {display: none;}
+    img#tv {display: block;}
     
 }
